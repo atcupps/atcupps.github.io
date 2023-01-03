@@ -1,6 +1,7 @@
 :root {
     --bg: #2f2f2f;
     --darkBg: #242424;
+    --scrollBG: #2a2a2a;
     --text: #e6e6fa;
     --textOrange: #cc6c1d;
     --textDarkBlue: #1290c3;
@@ -28,6 +29,28 @@ html, body {
     width: 100%;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #303030;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #303030;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+  }
+
 #leftDiv {
     height: 100%;
     width: 12.5%;
@@ -42,7 +65,7 @@ html, body {
     height: 100%;
     width: 75%;
     float: left;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #andrewcupps {
