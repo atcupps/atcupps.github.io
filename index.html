@@ -4,17 +4,6 @@
         <meta charset = "UTF-8">
         <title>Andrew Cupps</title>
         <link rel = "stylesheet" href = "main.css">
-
-        <script type = "text/javascript">
-            function writeVersion() {
-                const d = new Date();
-                var year = d.getFullYear() - 2004;
-                var month = d.getMonth() + 1;
-                var day = d.getDay() + 1;
-                document.write("" + year + "." + month + "." + day);
-            }
-        </script>
-
     </head>
     <body class = "body">
         <p>
@@ -24,7 +13,7 @@
             <br><span class = "lineNums">&nbsp;4&nbsp;</span><span class = "comment">&nbsp;* This class contains all important methods pertaining to Andrew Cupps.</span>
             <br><span class = "lineNums">&nbsp;5&nbsp;</span><span class = "comment">&nbsp;*</span>
             <br><span class = "lineNums">&nbsp;6&nbsp;</span><span class = "comment">&nbsp;* </span>
-                    <span class = "commentAnnot">@version </span><span class = "comment"><script>writeVersion()</script></span>
+                    <span class = "commentAnnot">@version </span><span class = "comment" id = "version"></span>
             <br><span class = "lineNums">&nbsp;7&nbsp;</span><span class = "comment">&nbsp;* </span>
                     <span class = "commentAnnot">@since </span><span class = "comment">1 Jan 2004</span>
             <br><span class = "lineNums">&nbsp;8&nbsp;</span><span class = "comment">&nbsp;*/</span>
@@ -144,5 +133,9 @@
             <br><span class = "lineNums">58&nbsp;</span>
             <br><span class = "lineNums">59&nbsp;</span>}
         </p>
+
+
+
+        <script src = "app.js"></script>
     </body>
 </html>
