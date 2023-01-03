@@ -1,0 +1,22 @@
+:root {
+    --bg: #2f2f2f;
+    --text: #e6e6fa;
+    --textOrange: #cc6c1d;
+    --textDarkBlue: #1290c3;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.orange {
+    color: var(--textOrange);
+}
+
+.darkBlue {
+    color: var(--textDarkBlue);
+}
+
