@@ -1,5 +1,6 @@
 :root {
     --bg: #2f2f2f;
+    --darkBg: #242424;
     --text: #e6e6fa;
     --textOrange: #cc6c1d;
     --textDarkBlue: #1290c3;
@@ -7,13 +8,63 @@
     --purple: #8542b8;
     --lightGreen: #75d41c;
     --pink: #ff6bba;
+    --brown: #996754;
 }
 
-body {
+html, body {
     background: var(--bg);
     color: var(--text);
     font-family: monospace;
-    font-size: 16px;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#leftDiv {
+    height: 100%;
+    width: 12.5%;
+    background-color: var(--darkBg);
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    overflow: auto;
+}
+
+#codeDiv {
+    height: 100%;
+    width: 75%;
+    float: left;
+    overflow: auto;
+}
+
+#code {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#topNav {
+    height: 40px;
+    width: 100%;
+    background-color: var(--darkBg);
+}
+
+#rightDiv {
+    height: 100%;
+    width: 12.5%;
+    background-color: var(--darkBg);
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    overflow: auto;
 }
 
 .orange {
@@ -75,4 +126,18 @@ body {
 
 .string {
     color: #17c6a3;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.outlineClass {
+    font-size: bold;
+    color: var(--textDarkBlue);
+}
+
+.brown {
+    color: var(--brown);
 }

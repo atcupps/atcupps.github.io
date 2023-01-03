@@ -6,135 +6,171 @@
         <link rel = "stylesheet" href = "main.css">
     </head>
     <body class = "body">
-        <p>
-                <span class = "lineNums">&nbsp;1&nbsp;</span><span class = "orange">package </span> io.github.atcupps;
-            <br><span class = "lineNums">&nbsp;2&nbsp;</span> 
-            <br><span class = "lineNums">&nbsp;3&nbsp;</span><span class = "comment">/**</span>
-            <br><span class = "lineNums">&nbsp;4&nbsp;</span><span class = "comment">&nbsp;* This class contains all important methods pertaining to Andrew Cupps.</span>
-            <br><span class = "lineNums">&nbsp;5&nbsp;</span><span class = "comment">&nbsp;*</span>
-            <br><span class = "lineNums">&nbsp;6&nbsp;</span><span class = "comment">&nbsp;* </span>
-                    <span class = "commentAnnot">@version </span><span class = "comment" id = "version"></span>
-            <br><span class = "lineNums">&nbsp;7&nbsp;</span><span class = "comment">&nbsp;* </span>
-                    <span class = "commentAnnot">@since </span><span class = "comment">1 Jan 2004</span>
-            <br><span class = "lineNums">&nbsp;8&nbsp;</span><span class = "comment">&nbsp;*/</span>
-            <br><span class = "lineNums">&nbsp;9&nbsp;</span><span class = "orange">public class </span><span class = "darkBlue">AndrewCupps</span> {
-            <br><span class = "lineNums">10&nbsp;</span>
-            <br><span class = "lineNums">11&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">introduction</span>() {
-            <br><span class = "lineNums">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "orange">return</span>
-            <br><span class = "lineNums">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"Hello, my name is Andrew Cupps, and I am an "</span>&nbsp;&nbsp;+
-            <br><span class = "lineNums">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"undergraduate computer science and astronomy " </span>+
-            <br><span class = "lineNums">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"student at the University of Maryland! "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
-            <br><span class = "lineNums">16&nbsp;</span>
-            <br><span class = "lineNums">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"Feel free to explore my website, or contact "</span>&nbsp;&nbsp;+
-            <br><span class = "lineNums">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"me at the email listed below. "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
-            <br><span class = "lineNums">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">20&nbsp;</span>
-            <br><span class = "lineNums">21&nbsp;</span>&nbsp;&nbsp;&nbsp;
-                <span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">getEmail</span>() {
-            <br><span class = "lineNums">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "orange">return </span><span class = "string">"at.cupps@gmail.com"</span>;
-            <br><span class = "lineNums">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">24&nbsp;</span>
-            <br><span class = "lineNums">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                    <span class = "method">languages</span>() {
-            <br><span class = "lineNums">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "orange">return</span>
-                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-            <br><span class = "lineNums">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "string">"Java"</span>,
-                    <span class = "string">"R"</span>,
-                    <span class = "string">"Matlab"</span>,
-                    <span class = "string">"JavaScript"</span>,
-                    <span class = "string">"HTML/CSS"</span>,
-                    <span class = "string">"Python"</span>,
-                    <span class = "string">"C++"</span>
-            <br><span class = "lineNums">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br><span class = "lineNums">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">30&nbsp;</span>
-            <br><span class = "lineNums">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                    <span class = "method">softwareAndTools</span>() {
-            <br><span class = "lineNums">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "orange">return</span>
-                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-            <br><span class = "lineNums">33&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "string">"Eclipse"</span>,
-                    <span class = "string">"JUnit"</span>,
-                    <span class = "string">"RStudio"</span>,
-                    <span class = "string">"LaTeX"</span>,
-                    <span class = "string">"Git"</span>,
-                    <span class = "string">"GitHub"</span>,
-                    <span class = "string">"Matlab"</span>,
-                    <span class = "string">"VS Code"</span>,
-                    <span class = "string">"Blender"</span>
-            <br><span class = "lineNums">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br><span class = "lineNums">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">36&nbsp;</span>
-            <br><span class = "lineNums">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public enum</span>
-                    <span class = "enum">InterestType </span>{
-            <br><span class = "lineNums">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "bigBlue">COMPUTER_SCIENCE</span>,
-                    <span class = "bigBlue">ASTRONOMY</span>,
-                    <span class = "bigBlue">OTHER</span>
-            <br><span class = "lineNums">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">40&nbsp;</span>
-            <br><span class = "lineNums">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                    <span class = "method">interests</span>(<span class = "enum">InterestType</span> <span class = "lightBlue">type</span>) {
-            
-            <br><span class = "lineNums">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">if</span>
-                    (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">COMPUTER_SCIENCE</span>) {
-            <br><span class = "lineNums">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class = "orange">return</span>
-                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-            <br><span class = "lineNums">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"AI/ML"</span>,
-                <span class = "string">"Compilers/Interpreters"</span>,
-                <span class = "string">"Simulations"</span>,
-                <span class = "string">"Data Science"</span>,
-                <span class = "string">"UI/UX"</span>
-            <br><span class = "lineNums">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br><span class = "lineNums">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
 
-            <br><span class = "lineNums">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else if</span>
-                (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">ASTRONOMY</span>) {
-            <br><span class = "lineNums">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "orange">return</span>
-                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-            <br><span class = "lineNums">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"Astrophysics"</span>,
-                <span class = "string">"Telescopes/Optics"</span>,
-                <span class = "string">"Light"</span>,
-                <span class = "string">"Galaxies"</span>,
-                <span class = "string">"Cosmology"</span>
-            <br><span class = "lineNums">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br><span class = "lineNums">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-            
-            <br><span class = "lineNums">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else</span> {
-            <br><span class = "lineNums">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "orange">return</span>
-                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-            <br><span class = "lineNums">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class = "string">"Political Science"</span>,
-                <span class = "string">"Trivia"</span>,
-                <span class = "string">"Soccer"</span>,
-                <span class = "string">"Linguistics"</span>,
-                <span class = "string">"Jazz"</span>
-            <br><span class = "lineNums">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br><span class = "lineNums">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-            <br><span class = "lineNums">58&nbsp;</span>
-            <br><span class = "lineNums">59&nbsp;</span>}
-        </p>
+        <div id = "container">
 
+            <div id = "leftDiv">
+                <h4>&nbsp;&nbsp;PACKAGE EXPLORER</h4>
+                <a href="https://github.com/atcupps/atcupps.github.io" target = "_blank">&nbsp;&nbsp;> 📁 atcupps.github.io</a> <br>
+                <a href="https://github.com/atcupps/JSENN" target = "_blank">&nbsp;&nbsp;> 📁 JSENN</a> <br>
+                <a href="https://github.com/atcupps/SchreklicheSeuche" target = "_blank">&nbsp;&nbsp;> 📁 SchreklicheSeuche</a>
+            </div>
 
+            <div id = "codeDiv">
+                <div id = "topNav">
+
+                </div>
+
+                <div id = "code">
+                    <p>
+                            <span class = "lineNums">&nbsp;1&nbsp;</span><span class = "orange">package </span> io.github.atcupps;
+                        <br><span class = "lineNums">&nbsp;2&nbsp;</span> 
+                        <br><span class = "lineNums">&nbsp;3&nbsp;</span><span class = "comment">/**</span>
+                        <br><span class = "lineNums">&nbsp;4&nbsp;</span><span class = "comment">&nbsp;* This class contains all important methods pertaining to Andrew Cupps.</span>
+                        <br><span class = "lineNums">&nbsp;5&nbsp;</span><span class = "comment">&nbsp;*</span>
+                        <br><span class = "lineNums">&nbsp;6&nbsp;</span><span class = "comment">&nbsp;* </span>
+                                <span class = "commentAnnot">@version </span><span class = "comment" id = "version"></span>
+                        <br><span class = "lineNums">&nbsp;7&nbsp;</span><span class = "comment">&nbsp;* </span>
+                                <span class = "commentAnnot">@since </span><span class = "comment">1 Jan 2004</span>
+                        <br><span class = "lineNums">&nbsp;8&nbsp;</span><span class = "comment">&nbsp;*/</span>
+                        <br><span class = "lineNums">&nbsp;9&nbsp;</span><span class = "orange">public class </span><span class = "darkBlue">AndrewCupps</span> {
+                        <br><span class = "lineNums">10&nbsp;</span>
+                        <br><span class = "lineNums">11&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">introduction</span>() {
+                        <br><span class = "lineNums">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "orange">return</span>
+                        <br><span class = "lineNums">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"Hello, my name is Andrew Cupps, and I am an "</span>&nbsp;&nbsp;+
+                        <br><span class = "lineNums">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"undergraduate computer science and astronomy " </span>+
+                        <br><span class = "lineNums">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"student at the University of Maryland! "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+                        <br><span class = "lineNums">16&nbsp;</span>
+                        <br><span class = "lineNums">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"Feel free to explore my website, or contact "</span>&nbsp;&nbsp;+
+                        <br><span class = "lineNums">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"me at the email listed below. "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+                        <br><span class = "lineNums">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">20&nbsp;</span>
+                        <br><span class = "lineNums">21&nbsp;</span>&nbsp;&nbsp;&nbsp;
+                            <span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">getEmail</span>() {
+                        <br><span class = "lineNums">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "orange">return </span><span class = "string">"at.cupps@gmail.com"</span>;
+                        <br><span class = "lineNums">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">24&nbsp;</span>
+                        <br><span class = "lineNums">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
+                                <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
+                                <span class = "method">languages</span>() {
+                        <br><span class = "lineNums">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "orange">return</span>
+                                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+                        <br><span class = "lineNums">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "string">"Java"</span>,
+                                <span class = "string">"R"</span>,
+                                <span class = "string">"Matlab"</span>,
+                                <span class = "string">"JavaScript"</span>,
+                                <span class = "string">"HTML/CSS"</span>,
+                                <span class = "string">"Python"</span>,
+                                <span class = "string">"C++"</span>
+                        <br><span class = "lineNums">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                        <br><span class = "lineNums">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">30&nbsp;</span>
+                        <br><span class = "lineNums">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
+                                <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
+                                <span class = "method">softwareAndTools</span>() {
+                        <br><span class = "lineNums">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "orange">return</span>
+                                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+                        <br><span class = "lineNums">33&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "string">"Eclipse"</span>,
+                                <span class = "string">"JUnit"</span>,
+                                <span class = "string">"RStudio"</span>,
+                                <span class = "string">"LaTeX"</span>,
+                                <span class = "string">"Git"</span>,
+                                <span class = "string">"GitHub"</span>,
+                                <span class = "string">"Matlab"</span>,
+                                <span class = "string">"VS Code"</span>,
+                                <span class = "string">"Blender"</span>
+                        <br><span class = "lineNums">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                        <br><span class = "lineNums">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">36&nbsp;</span>
+                        <br><span class = "lineNums">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public enum</span>
+                                <span class = "enum">InterestType </span>{
+                        <br><span class = "lineNums">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "bigBlue">COMPUTER_SCIENCE</span>,
+                                <span class = "bigBlue">ASTRONOMY</span>,
+                                <span class = "bigBlue">OTHER</span>
+                        <br><span class = "lineNums">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">40&nbsp;</span>
+                        <br><span class = "lineNums">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
+                                <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
+                                <span class = "method">interests</span>(<span class = "enum">InterestType</span> <span class = "lightBlue">type</span>) {
+                        
+                        <br><span class = "lineNums">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">if</span>
+                                (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">COMPUTER_SCIENCE</span>) {
+                        <br><span class = "lineNums">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class = "orange">return</span>
+                                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+                        <br><span class = "lineNums">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"AI/ML"</span>,
+                            <span class = "string">"Compilers/Interpreters"</span>,
+                            <span class = "string">"Simulations"</span>,
+                            <span class = "string">"Data Science"</span>,
+                            <span class = "string">"UI/UX"</span>
+                        <br><span class = "lineNums">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                        <br><span class = "lineNums">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+
+                        <br><span class = "lineNums">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else if</span>
+                            (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">ASTRONOMY</span>) {
+                        <br><span class = "lineNums">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "orange">return</span>
+                            <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+                        <br><span class = "lineNums">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"Astrophysics"</span>,
+                            <span class = "string">"Telescopes/Optics"</span>,
+                            <span class = "string">"Light"</span>,
+                            <span class = "string">"Galaxies"</span>,
+                            <span class = "string">"Cosmology"</span>
+                        <br><span class = "lineNums">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                        <br><span class = "lineNums">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        
+                        <br><span class = "lineNums">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else</span> {
+                        <br><span class = "lineNums">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "orange">return</span>
+                            <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+                        <br><span class = "lineNums">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class = "string">"Political Science"</span>,
+                            <span class = "string">"Trivia"</span>,
+                            <span class = "string">"Soccer"</span>,
+                            <span class = "string">"Linguistics"</span>,
+                            <span class = "string">"Jazz"</span>
+                        <br><span class = "lineNums">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                        <br><span class = "lineNums">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><span class = "lineNums">58&nbsp;</span>
+                        <br><span class = "lineNums">59&nbsp;</span>}
+                    </p>
+                </div>
+            </div>
+
+            <div id = "rightDiv">
+                
+                <h4>&nbsp;&nbsp;OUTLINE</h4>
+                &nbsp;&nbsp;📦 io.github.atcupps<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "outlineClass">C</span> AndrewCupps<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 introduction()<span class="brown">: String</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 getEmail()<span class="brown">: String</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 languages()<span class="brown">: List&lt;String&gt;</String></span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 softwareAndTools()<span class="brown">: List&lt;String&gt;</String></span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 languages()<span class="brown">: List&lt;String&gt;</String></span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟤 InterestType<span class="brown">: enum</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>COMPUTER_SCIENCE<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>ASTRONOMY<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>OTHER<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 interests(InterestType)<span class="brown">: List&lt;String&gt;</String></span><br>
+
+            </div>
+
+        </div>
 
         <script src = "app.js"></script>
     </body>
