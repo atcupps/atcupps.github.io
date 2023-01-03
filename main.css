@@ -65,7 +65,7 @@ html, body {
     height: 100%;
     width: 75%;
     float: left;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #andrewcupps {
