@@ -20,3 +20,7 @@ body {
     color: var(--textDarkBlue);
 }
 
+.lineNums {
+    color: #77919a;
+}
+
