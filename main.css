@@ -3,6 +3,9 @@
     --text: #e6e6fa;
     --textOrange: #cc6c1d;
     --textDarkBlue: #1290c3;
+    --textLightBlue: #47c2ff;
+    --purple: #8542b8;
+    --lightGreen: #75d41c;
 }
 
 body {
@@ -18,6 +21,23 @@ body {
 
 .darkBlue {
     color: var(--textDarkBlue);
+}
+
+.lightBlue {
+    color: var(--textLightBlue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.lightGreen {
+    color: var(--lightGreen);
+}
+
+.methodCall {
+    color: var(--lightGreen);
+    font-style: italic;
 }
 
 .lineNums {
