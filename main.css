@@ -76,7 +76,10 @@ html, body {
 
 #topNav {
     height: 40px;
-    width: 100%;
+    width: 75%;
+    left: 12.5%;
+    top: 0px;
+    position: absolute;
     background-color: var(--darkBg);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
