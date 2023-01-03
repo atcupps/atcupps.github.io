@@ -45,7 +45,7 @@ html, body {
     overflow: auto;
 }
 
-#code {
+#andrewcupps {
     height: 100%;
     width: 100%;
     overflow: auto;
@@ -55,6 +55,8 @@ html, body {
     height: 40px;
     width: 100%;
     background-color: var(--darkBg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
 }
 
 #rightDiv {
@@ -140,4 +142,19 @@ a {
 
 .brown {
     color: var(--brown);
+}
+
+.selectedNavBtn {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    border-radius: 0;
+    border-left: 1px solid var(--darkBg);
+    border-top: 3px solid var(--purple);
+    border-right: 1px solid var(--darkBg);
+    border-bottom: 0px;
+    background-color: var(--bg);
+    color: var(--text);
 }
