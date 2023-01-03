@@ -24,3 +24,11 @@ body {
     color: #77919a;
 }
 
+.comment {
+    color: #808080;
+}
+
+.commentAnnot {
+    color: #9a8c7c;
+    font-weight: bold;
+}
