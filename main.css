@@ -32,3 +32,11 @@ body {
     color: #9a8c7c;
     font-weight: bold;
 }
+
+.method {
+    color: #1eb540;
+}
+
+.string {
+    color: #17c6a3;
+}
