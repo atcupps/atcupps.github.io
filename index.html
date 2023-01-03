@@ -84,33 +84,65 @@
                     <span class = "string">"GitHub"</span>,
                     <span class = "string">"Matlab"</span>,
                     <span class = "string">"VS Code"</span>,
-                    <span class = "string">"Blender"</span>,
+                    <span class = "string">"Blender"</span>
             <br><span class = "lineNums">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
             <br><span class = "lineNums">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
             <br><span class = "lineNums">36&nbsp;</span>
-            <br><span class = "lineNums">37&nbsp;</span>
-            <br><span class = "lineNums">38&nbsp;</span>
-            <br><span class = "lineNums">39&nbsp;</span>
+            <br><span class = "lineNums">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public enum</span>
+                    <span class = "enum">InterestType </span>{
+            <br><span class = "lineNums">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class = "bigBlue">COMPUTER_SCIENCE</span>,
+                    <span class = "bigBlue">ASTRONOMY</span>,
+                    <span class = "bigBlue">OTHER</span>
+            <br><span class = "lineNums">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
             <br><span class = "lineNums">40&nbsp;</span>
-            <br><span class = "lineNums">41&nbsp;</span>
-            <br><span class = "lineNums">42&nbsp;</span>
-            <br><span class = "lineNums">43&nbsp;</span>
-            <br><span class = "lineNums">44&nbsp;</span>
-            <br><span class = "lineNums">45&nbsp;</span>
-            <br><span class = "lineNums">46&nbsp;</span>
-            <br><span class = "lineNums">47&nbsp;</span>
-            <br><span class = "lineNums">48&nbsp;</span>
-            <br><span class = "lineNums">49&nbsp;</span>
-            <br><span class = "lineNums">50&nbsp;</span>
-            <br><span class = "lineNums">51&nbsp;</span>
-            <br><span class = "lineNums">52&nbsp;</span>
-            <br><span class = "lineNums">53&nbsp;</span>
-            <br><span class = "lineNums">54&nbsp;</span>
-            <br><span class = "lineNums">55&nbsp;</span>
-            <br><span class = "lineNums">56&nbsp;</span>
-            <br><span class = "lineNums">57&nbsp;</span>
+            <br><span class = "lineNums">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
+                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
+                    <span class = "method">interests</span>(<span class = "enum">InterestType</span> <span class = "lightBlue">type</span>) {
+            
+            <br><span class = "lineNums">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">if</span>
+                    (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">COMPUTER_SCIENCE</span>) {
+            <br><span class = "lineNums">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class = "orange">return</span>
+                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+            <br><span class = "lineNums">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class = "string">"AI/ML"</span>,
+                <span class = "string">"Compilers/Interpreters"</span>,
+                <span class = "string">"Simulations"</span>,
+                <span class = "string">"Data Science"</span>,
+                <span class = "string">"UI/UX"</span>
+            <br><span class = "lineNums">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+            <br><span class = "lineNums">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+
+            <br><span class = "lineNums">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else if</span>
+                (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">ASTRONOMY</span>) {
+            <br><span class = "lineNums">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class = "orange">return</span>
+                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+            <br><span class = "lineNums">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class = "string">"Astrophysics"</span>,
+                <span class = "string">"Telescopes/Optics"</span>,
+                <span class = "string">"Light"</span>,
+                <span class = "string">"Galaxies"</span>,
+                <span class = "string">"Cosmology"</span>
+            <br><span class = "lineNums">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+            <br><span class = "lineNums">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            
+            <br><span class = "lineNums">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else</span> {
+            <br><span class = "lineNums">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class = "orange">return</span>
+                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
+            <br><span class = "lineNums">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class = "string">"Political Science"</span>,
+                <span class = "string">"Trivia"</span>,
+                <span class = "string">"Soccer"</span>,
+                <span class = "string">"Linguistics"</span>,
+                <span class = "string">"Jazz"</span>
+            <br><span class = "lineNums">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+            <br><span class = "lineNums">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            <br><span class = "lineNums">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
             <br><span class = "lineNums">58&nbsp;</span>
-            <br><span class = "lineNums">59&nbsp;</span>
+            <br><span class = "lineNums">59&nbsp;</span>}
         </p>
     </body>
 </html>
