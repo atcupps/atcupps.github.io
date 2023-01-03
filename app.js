@@ -10,7 +10,7 @@ document.getElementById("version").innerHTML = "" + year + "." + month + "." + d
 var curDisplay = "andrewcupps";
 document.getElementById("andrewcuppsbutton").onclick = function() {
     if (curDisplay != "andrewcupps") {
-        curDisplay = "andrewcupps";
+        curDisplay = "andrewcupps"
         document.getElementById("andrewcupps").style.visibility = "visible";
     }
 
