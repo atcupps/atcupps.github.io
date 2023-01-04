@@ -38,7 +38,8 @@ html, body {
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 16px;
+    width: 10px;
+    height: 10px;
   }
 
   *::-webkit-scrollbar-track {
@@ -59,6 +60,26 @@ html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 13px;
     overflow: auto;
+}
+
+#centerRightTopDivs {
+    height: 75%;
+}
+
+#consoleDiv {
+    height: 24%;
+    border-top-style: solid;
+    border-top-color: var(--darkBg);
+    border-top-width: 2px;
+    font-size: 12px;
+    font-style: monospace;
+    overflow: auto;
+}
+
+#consoleh4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 #codeDiv {
