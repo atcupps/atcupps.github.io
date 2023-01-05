@@ -9,6 +9,7 @@ document.getElementById("version").innerHTML = "" + year + "." + month + "." + d
 
 writeConsole();
 
+//AndrewCupps.java button in top navbar tabs
 var curDisplay = "andrewcupps";
 document.getElementById("andrewcuppsbutton").onclick = function() {
     if (curDisplay != "andrewcupps") {
@@ -17,9 +18,28 @@ document.getElementById("andrewcuppsbutton").onclick = function() {
     }
 }
 
+//Run button in top navbar
+document.getElementById("runBtn").onclick = function() {
+    if (curDisplay == "andrewcupps") {
+        console.log("beans");
+        document.getElementById("console1").innerHTML = "";
+        document.getElementById("console1ln2").innerHTML = "";
+        document.getElementById("console2").innerHTML = "";
+        document.getElementById("console3").innerHTML = "";
+        document.getElementById("console4").innerHTML = "";
+        document.getElementById("console5").innerHTML = "";
+        writeConsole();
+    }
+}
+
+/**
+ * Several functions to animate the appearance of text in the console section of the page
+ */
 var speed = 250;
+var shouldPrintLast = false;
 
 function writeConsole() {
+    shouldPrintLast = false;
     setTimeout(writeConsole1, speed);
 }
 
@@ -29,7 +49,7 @@ function writeConsole1() {
 }
 
 function writeConsole1ln2() {
-    document.getElementById("console1ln2").innerHTML = "  Feel free to explore my website, or contact me at the email listed below. ";
+    document.getElementById("console1ln2").innerHTML = "Feel free to explore my website, or contact me at the email listed below. ";
     setTimeout(writeConsole2, speed);
 }
 
@@ -45,15 +65,18 @@ function writeConsole3() {
 
 function writeConsole4() {
     document.getElementById("console4").innerHTML = "> Software/Tools I use: [Eclipse, JUnit, RStudio, LaTeX, Git, GitHub, Matlab, VS Code, Blender]";
+    shouldPrintLast = true;
     setTimeout(writeConsole5, speed);
 }
 
 var hasVertLine = false;
 function writeConsole5() {
-    document.getElementById("console5").innerHTML = "> ";
-    if (!hasVertLine) {
-        document.getElementById("console5").innerHTML += "|";
+    if (shouldPrintLast) {
+        document.getElementById("console5").innerHTML = "> ";
+        if (!hasVertLine) {
+            document.getElementById("console5").innerHTML += "|";
+        }
+        hasVertLine = !hasVertLine;
+        setTimeout(writeConsole5, 1000);
     }
-    hasVertLine = !hasVertLine;
-    setTimeout(writeConsole5, 1000);
 }

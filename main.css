@@ -70,7 +70,7 @@ html, body {
     height: 24%;
     border-top-style: solid;
     border-top-color: var(--darkBg);
-    border-top-width: 2px;
+    border-top-width: 3px;
     font-size: 12px;
     font-style: monospace;
     overflow: auto;
@@ -104,6 +104,21 @@ html, body {
     background-color: var(--darkBg);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
+}
+
+#runBtn {
+    height: 40px;
+    width: 40px;
+    left: -10px;
+    position: relative;
+    float: right;
+    background-color: var(--bg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-top: 3px solid var(--purple);
 }
 
 #rightDiv {
@@ -192,12 +207,15 @@ a {
     color: var(--brown);
 }
 
-.selectedNavBtn {
-    width: 15%;
-    height: 100%;
+#andrewcuppsbutton {
     position: relative;
     top: 0%;
     left: 0%;
+}
+
+.selectedNavBtn {
+    width: 15%;
+    height: 100%;
     border-radius: 0;
     border-left: 1px solid var(--darkBg);
     border-top: 3px solid var(--purple);
@@ -207,4 +225,5 @@ a {
     color: var(--text);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
+    cursor: pointer;
 }
