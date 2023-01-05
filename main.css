@@ -121,6 +121,12 @@ html, body {
     border-top: 3px solid var(--purple);
 }
 
+#runBtn:hover {
+    font-size: 18px;
+    background-color: var(--purple);
+    transition: 0.2s;
+}
+
 #rightDiv {
     height: 100%;
     width: 12.5%;
@@ -195,6 +201,11 @@ html, body {
 a {
     text-decoration: none;
     color: var(--text);
+}
+
+a:hover {
+    color: var(--purple);
+    transition: 0.3s;
 }
 
 .outlineClass {
