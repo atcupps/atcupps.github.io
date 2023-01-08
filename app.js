@@ -59,7 +59,7 @@ function writeConsole1() {
 
 function writeConsole1ln2() {
     if (shouldPrintFirstLineTwo) {
-        document.getElementById("console1ln2").innerHTML = "Feel free to explore my website, or contact me at the email listed below. ";
+        document.getElementById("console1ln2").innerHTML = "Feel free to explore my projects on the left or contact me at the email listed below. ";
         shouldPrintSecond = true;
         setTimeout(writeConsole2, speed);
     }
