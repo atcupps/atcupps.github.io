@@ -4,7 +4,7 @@
 const d = new Date();
 var year = d.getFullYear() - 2004;
 var month = d.getMonth() + 1;
-var day = d.getDate() + 1;
+var day = d.getDate();
 document.getElementById("version").innerHTML = "" + year + "." + month + "." + day;
 
 writeConsole();
