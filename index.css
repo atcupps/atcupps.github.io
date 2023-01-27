@@ -1,8 +1,8 @@
 :root {
     --bg: #041a2b;
+    --bgsecondary: #08253a;
     --txtcolor: white;
     --txtsecondary: lightblue;
-    --txtshadow: rgb(115, 153, 166);
     --txttertiary: gray;
 }
 
@@ -106,12 +106,14 @@ body {
 
 /* link styling from Tobias Ahlin Bjerrome */
 a {
+    transition: 0.3s;
     position: relative;
     color: var(--txtcolor);
     text-decoration: none;
   }
   
   a:hover {
+    transition: 0.3s;
     color: var(--txtsecondary);
   }
   
@@ -159,6 +161,62 @@ p {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 120px;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 30%;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: var(--bgsecondary);
+    border-radius: 5px;
+}
+
+.innerproject {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.projectHeader {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.projectName {
+    width: 90%;
+}
+
+.projectLinks {
+    width: 10%;
+    margin-top: 20px;
+    justify-content: right;
+}
+
+.projectDescription {
+    color: var(--txtcolor);
+    font-size: 14px;
+}
+
+.projectLanguages {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 10px;
+}
+
+.projectLang {
+    margin-left: 7px;
+    margin-right: 7px;
+    color: var(--txtsecondary);
+    font-size: 12px;
 }
 
 .resume_section {
@@ -225,3 +283,4 @@ p {
     border-radius: 9px;
     border: 0px none rgba(255,255,255,0.2);
   }
+
