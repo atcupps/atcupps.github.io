@@ -1,5 +1,5 @@
 :root {
-    --bg: black;
+    --bg: #041a2b;
     --txtcolor: white;
     --txtsecondary: lightblue;
     --txttertiary: gray;
@@ -13,28 +13,60 @@ body {
     flex-flow: column;
 }
 
+
+
 .navbar {
+    background-image: linear-gradient(to bottom, var(--bg), rgba(0,0,0,0));
     top: 0%;
     left: 0%;
-    height: 10%;
+    height: 20%;
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: center;
+    flex-flow: row;
+}
+
+.logo {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.links {
+    width: 40%;
+    height: 24px;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+}
+
+.bottombar {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--bg));
+    top: 80%;
+    left:0%;
+    height: 20%;
+    width: 100%;
+    position: fixed;
 }
 
 .mainbody {
     position: absolute;
-    height: 90%;
     width: 100%;
     top: 10%;
     left: 0%;
+    display: flex;
+    flex-flow: column;
+}
+
+.basebody {
     display: flex;
     flex-flow: row;
 }
 
 .leftmain {
     width: 50%;
+    height: 90%;
     display: flex;
     justify-content: right;
 }
@@ -72,15 +104,38 @@ body {
     font-size: 70px;
 }
 
+/* link styling from Tobias Ahlin Bjerrome */
 a {
-    color: inherit;
+    position: relative;
+    color: var(--txtcolor);
     text-decoration: none;
-}
+  }
+  
+  a:hover {
+    color: var(--txtsecondary);
+  }
+  
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--txtsecondary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
 
 p {
     font-size: 20px;
     line-height: 1.5;
-    color: var(--txttertiary)
+    color: var(--txttertiary);
 }
 
 .mainmenu {
@@ -92,4 +147,59 @@ p {
 .mainmenu:hover {
     color: var(--txtsecondary);
     transition: 1000ms;
+}
+
+.about_section {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 120px;
+}
+
+.portfolio_section {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 120px;
+}
+
+.resume_section {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 120px;
+}
+
+.contact_section {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 120px;
+}
+
+.contact_text {
+    display: flex;
+    justify-content: center;
+    margin-left:17%;
+    margin-right: 17%;
+}
+
+.fillerbottom {
+    margin-top: 120px;
+}
+
+.prmry {
+    color: var(--txtcolor);
+}
+
+.scndry {
+    color: var(--txtsecondary);
+}
+
+.trtry {
+    color: var(--txttertiary);
+}
+
+.cuppslist {
+    font-size: 16px;
+}
+
+.email {
+    color: var(--txtcolor);
 }
