@@ -1,7 +1,8 @@
 :root {
     --bg: black;
     --txtcolor: white;
-    --txtsecondary: red;
+    --txtsecondary: lightblue;
+    --txttertiary: gray;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 }
 
 .navbar {
-    background-color: red;
     top: 0%;
     left: 0%;
     height: 10%;
@@ -24,7 +24,6 @@ body {
 }
 
 .mainbody {
-    background-color: blue;
     position: absolute;
     height: 90%;
     width: 100%;
@@ -35,28 +34,33 @@ body {
 }
 
 .leftmain {
-    background-color: green;
     width: 50%;
     display: flex;
     justify-content: right;
 }
 
 .picdiv {
-    background-color: yellow;
     width: 60%;
-    margin-top: 20%;
+    margin-top: 15%;
+    margin-right: 5%;
     display: flex;
     justify-content: center;
 }
 
+.avatar {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
 .rightmain {
-    background-color: blueviolet;
     width: 50%;
     display: flex;
 }
 
 .textdiv {
-    background-color: orange;
     width: 70%;
     margin-top: 10%;
     margin-left: 10px;
@@ -65,4 +69,22 @@ body {
 
 .name {
     color: var(--txtsecondary);
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--txttertiary)
+}
+
+.mainmenu {
+    font-size: 40px;
+    line-height: 1.22;
+    transition: 1000ms;
+}
+
+.mainmenu:hover {
+    color: var(--txtsecondary);
+    transition: 1000ms;
 }
