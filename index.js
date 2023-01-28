@@ -1,11 +1,11 @@
 'use strict'
 
-function offsetAnchor() {
-    if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
-    }
-}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-window.addEventListener("hashchange", offsetAnchor);
-
-window.setTimeout(offsetAnchor, 1); //arbitrary
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

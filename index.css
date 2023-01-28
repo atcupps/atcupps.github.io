@@ -2,8 +2,12 @@
     --bg: #041a2b;
     --bgsecondary: #08253a;
     --txtcolor: white;
-    --txtsecondary: lightblue;
+    --txtsecondary: skyblue;
     --txttertiary: gray;
+}
+
+html {
+    scroll-padding-top: 15%;
 }
 
 body {
@@ -178,6 +182,13 @@ p {
     margin-bottom: 3px;
     background-color: var(--bgsecondary);
     border-radius: 5px;
+    position: relative;
+    transition-duration: 600ms;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    transition-duration: 600ms;
 }
 
 .innerproject {
@@ -204,12 +215,15 @@ p {
 .projectDescription {
     color: var(--txtcolor);
     font-size: 14px;
+    margin-bottom: 70px;
 }
 
 .projectLanguages {
     display: flex;
     flex-flow: row;
-    margin-bottom: 10px;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
 }
 
 .projectLang {
@@ -217,6 +231,16 @@ p {
     margin-right: 7px;
     color: var(--txtsecondary);
     font-size: 12px;
+}
+
+.seeMore {
+    background-color: var(--bgsecondary);
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .resume_section {
@@ -284,3 +308,9 @@ p {
     border: 0px none rgba(255,255,255,0.2);
   }
 
+.separator {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
