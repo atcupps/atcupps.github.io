@@ -1,197 +1,194 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <title>Andrew Cupps</title>
-        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="jedi.ico">
+        <script src="https://kit.fontawesome.com/d0bbc902ec.js" crossorigin="anonymous"></script>
     </head>
-    <body class = "body">
+    <body>
+        
 
-        <div id = "container">
+        
 
-            <div id = "leftDiv">
-                <h4>&nbsp;&nbsp;PROJECT EXPLORER</h4>
-                &nbsp;&nbsp;> 📁<a href="https://github.com/atcupps/atcupps.github.io" target = "_blank">&nbsp;atcupps.github.io</a> <br>
-                &nbsp;&nbsp;> 📁<a href="https://github.com/atcupps/JSENN" target = "_blank">&nbsp;JSENN</a> <br>
-                &nbsp;&nbsp;> 📁<a href="https://github.com/atcupps/SchreklicheSeuche" target = "_blank">&nbsp;SchreklicheSeuche</a>
-            </div>
-            <div id = "centerRightTopDivs">
-                <div id = "codeDiv">
-                    <div id = "topNav">
-                        <button id="andrewcuppsbutton" class = "selectedNavBtn"><span class = "orange">J&nbsp;&nbsp;</span>AndrewCupps.java</button>
-                        <button id="runBtn" title="Run">▶</button>
-                    </div>
-
-                    <div id = "andrewcupps">
-                        <p>
-                            <br>
-                            <br>
-                                <span class = "lineNums">&nbsp;1&nbsp;</span><span class = "orange">package </span> io.github.atcupps;
-                            <br><span class = "lineNums">&nbsp;2&nbsp;</span> 
-                            <br><span class = "lineNums">&nbsp;3&nbsp;</span><span class = "comment">/**</span>
-                            <br><span class = "lineNums">&nbsp;4&nbsp;</span><span class = "comment">&nbsp;* This class contains all important methods pertaining to Andrew Cupps.</span>
-                            <br><span class = "lineNums">&nbsp;5&nbsp;</span><span class = "comment">&nbsp;*</span>
-                            <br><span class = "lineNums">&nbsp;6&nbsp;</span><span class = "comment">&nbsp;* </span>
-                                    <span class = "commentAnnot">@version </span><span class = "comment" id = "version"></span>
-                            <br><span class = "lineNums">&nbsp;7&nbsp;</span><span class = "comment">&nbsp;* </span>
-                                    <span class = "commentAnnot">@since </span><span class = "comment">1 Jan 2004</span>
-                            <br><span class = "lineNums">&nbsp;8&nbsp;</span><a id="introduction"></a><span class = "comment">&nbsp;*/</span>
-                            <br><span class = "lineNums">&nbsp;9&nbsp;</span><span class = "orange">public class </span><span class = "darkBlue">AndrewCupps</span> {
-                            <br><span class = "lineNums">10&nbsp;</span>
-                            <br><span class = "lineNums">11&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">introduction</span>() {
-                            <br><span class = "lineNums">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "orange">return</span>
-                            <br><span class = "lineNums">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"Hello, my name is Andrew Cupps, and I am an "</span>&nbsp;&nbsp;+
-                            <br><span class = "lineNums">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"undergraduate computer science and astronomy " </span>+
-                            <br><span class = "lineNums">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"student at the University of Maryland! "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
-                            <br><span class = "lineNums">16&nbsp;</span><a id="email"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="string">"\n" </span>+
-                            <br><span class = "lineNums">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"Feel free to explore my projects on the left "</span>&nbsp;+
-                            <br><span class = "lineNums">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"or contact me at the email listed below. "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
-                            <br><span class = "lineNums">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">20&nbsp;</span>
-                            <br><span class = "lineNums">21&nbsp;</span>&nbsp;&nbsp;&nbsp;
-                                <span class = "orange">public </span><span class = "darkBlue">String </span><span class = "method">getEmail</span>() {<a id="languages"></a>
-                            <br><span class = "lineNums">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "orange">return </span><span class = "string">"at.cupps@gmail.com"</span>;
-                            <br><span class = "lineNums">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">24&nbsp;</span>
-                            <br><span class = "lineNums">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                                    <span class = "method">languages</span>() {
-                            <br><span class = "lineNums">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "orange">return</span>
-                                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-                            <br><span class = "lineNums">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "string">"Java"</span>,
-                                    <span class = "string">"R"</span>,
-                                    <span class = "string">"Matlab"</span>,
-                                    <span class = "string">"JavaScript"</span>,
-                                    <span class = "string">"HTML/CSS"</span>,<a id="software"></a>
-                                    <span class = "string">"Python"</span>,
-                                    <span class = "string">"C++"</span>
-                            <br><span class = "lineNums">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-                            <br><span class = "lineNums">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">30&nbsp;</span>
-                            <br><span class = "lineNums">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                                    <span class = "method">softwareAndTools</span>() {
-                            <br><span class = "lineNums">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "orange">return</span>
-                                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-                            <br><span class = "lineNums">33&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "string">"Eclipse"</span>,
-                                    <span class = "string">"JUnit"</span>,
-                                    <span class = "string">"RStudio"</span>,
-                                    <span class = "string">"LaTeX"</span>,
-                                    <span class = "string">"Git"</span>,
-                                    <span class = "string">"GitHub"</span>,
-                                    <span class = "string">"Matlab"</span>,
-                                    <span class = "string">"VS Code"</span>,<a id="interesttypeenum"></a>
-                                    <span class = "string">"Blender"</span>
-                            <br><span class = "lineNums">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-                            <br><span class = "lineNums">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">36&nbsp;</span>
-                            <br><span class = "lineNums">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public enum</span>
-                                    <span class = "enum">InterestType </span>{
-                            <br><span class = "lineNums">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "bigBlue">COMPUTER_SCIENCE</span>,<a id="interests()"></a>
-                                    <span class = "bigBlue">ASTRONOMY</span>,
-                                    <span class = "bigBlue">OTHER</span>
-                            <br><span class = "lineNums">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">40&nbsp;</span>
-                            <br><span class = "lineNums">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">public</span>
-                                    <span class = "lightBlue">List</span>&lt;<span class = "purple">String</span>&gt;
-                                    <span class = "method">interests</span>(<span class = "enum">InterestType</span> <span class = "lightBlue">type</span>) {
-                            
-                            <br><span class = "lineNums">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">if</span>
-                                    (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">COMPUTER_SCIENCE</span>) {
-                            <br><span class = "lineNums">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class = "orange">return</span>
-                                    <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-                            <br><span class = "lineNums">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"AI/ML"</span>,
-                                <span class = "string">"Compilers/Interpreters"</span>,
-                                <span class = "string">"Simulations"</span>,
-                                <span class = "string">"Data Science"</span>,
-                                <span class = "string">"UI/UX"</span>
-                            <br><span class = "lineNums">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-                            <br><span class = "lineNums">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-
-                            <br><span class = "lineNums">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else if</span>
-                                (<span class = "lightBlue">type</span> == <span class = "enum">InterestType</span>.<span class = "bigBlue">ASTRONOMY</span>) {
-                            <br><span class = "lineNums">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "orange">return</span>
-                                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-                            <br><span class = "lineNums">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"Astrophysics"</span>,
-                                <span class = "string">"Telescopes/Optics"</span>,
-                                <span class = "string">"Light"</span>,
-                                <span class = "string">"Galaxies"</span>,
-                                <span class = "string">"Cosmology"</span>
-                            <br><span class = "lineNums">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-                            <br><span class = "lineNums">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                            
-                            <br><span class = "lineNums">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "orange">else</span> {
-                            <br><span class = "lineNums">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "orange">return</span>
-                                <span class = "darkBlue">Arrays</span>.<span class = "methodCall">asList</span>(
-                            <br><span class = "lineNums">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class = "string">"Political Science"</span>,
-                                <span class = "string">"History"</span>,
-                                <span class = "string">"Soccer"</span>,
-                                <span class = "string">"Linguistics"</span>,
-                                <span class = "string">"Bread Baking"</span>
-                            <br><span class = "lineNums">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
-                            <br><span class = "lineNums">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}
-                            <br><span class = "lineNums">58&nbsp;</span>
-                            <br><span class = "lineNums">59&nbsp;</span>}
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                </div>
-
-                <div id = "rightDiv">
+        <!--DIV FOR REST OF PAGE-->
+        <div class="mainbody">
+            <!--DIV FOR MAIN MENU-->
+            <div class="basebody">
+                <!--DIV FOR LEFT WITH PICTURE-->
+                <div class="leftmain">
                     
-                    <h4>&nbsp;&nbsp;OUTLINE</h4>
-                    &nbsp;&nbsp;📦 io.github.atcupps<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "outlineClass">C</span> AndrewCupps<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#introduction">🟢 introduction()</a><span class="brown">: String</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#email">🟢 getEmail()</a><span class="brown">: String</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#languages">🟢 languages()</a><span class="brown">: List&lt;String&gt;</String></span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#software">🟢 softwareAndTools()</a><span class="brown">: List&lt;String&gt;</String></span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#interesttypeenum">🟤 InterestType</a><span class="brown">: enum</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>COMPUTER_SCIENCE<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>ASTRONOMY<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigBlue">F </span>OTHER<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#interests()">🟢 interests(InterestType)</a><span class="brown">: List&lt;String&gt;</String></span><br>
+                    <!--DIV FOR PICTURE ITSELF-->
+                    <div class="picdiv">
+                        <img src="img_avatar.png" alt="Andrew Cupps" class="avatar">
+                    </div>
+                </div>
 
+                <!--DIV FOR RIGHT WITH TEXT-->
+                <div class="rightmain">
+
+                    <!--DIV FOR TEXT ITSELF-->
+                    <div class="textdiv">
+                        <h3>Hello there! My name is <br><span class="name">Andrew<br>Cupps</span></h3>
+                        <p>
+                            <i>I'm an undergraduate student at the University of Maryland studying to
+                            help shape our future through innovation and research.</i>
+                        </p>
+                        <span class="mainmenu" id="about" data-value="ABOUT"><span class="scndry">&#62;&nbsp</span><a href="#about_section">ABOUT</a>&nbsp</span><br>
+                        <span class="mainmenu" id="portfolio" data-value="PORTFOLIO"><span class="scndry">&#62;&nbsp</span><a href="#portfolio_section">PORTFOLIO</a>&nbsp</span><br>
+                        <span class="mainmenu" id="contact" data-value="CONTACT"><span class="scndry">&#62;&nbsp</span><a href="#contact_section">CONTACT</a>&nbsp</span><br>
+                        <span class="mainmenu" id="resume" data-value="RESUME"><span class="scndry">&#62;&nbsp</span><a href="resume/resume.html" target="_blank">RESUME</a>&nbsp</span><br>
+                    </div>
                 </div>
             </div>
 
-            <div id="consoleDiv">
-
+            <!--ABOUT SECTION-->
+            <div class="about_section" id="about_section">
+                <h1><span class="scndry">&#62;&nbsp</span>About Me</h1>
                 <p>
-                    <br>
-                    &nbsp;<span id="console1"></span><br>
-                    &nbsp;&nbsp;&nbsp;<span id="console1ln2"></span><br><br>
-                    &nbsp;<span id="console2"></span><br><br>
-                    &nbsp;<span id="console3"></span><br><br>
-                    &nbsp;<span id="console4"></span><br><br>
-                    &nbsp;<span id="console5"></span><br><br>
-                    &nbsp;<span id="console6"></span>
+                    I am a student at the University of Maryland currently pursuing a Bachelor of Science double major in
+                    Computer Science and Astronomy. I seek to ethically use software engineering, data science, and artificial
+                    intelligence to improve our understanding of the universe.<br><br>
+
+                    Recently, I've been working with the following languages:
+                    <span class="cuppslist">
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp Java</span>
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp R</span>
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp HTML/CSS</span>
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp JavaScript</span>
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp Python</span>
+                    <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="trtry">&nbsp C</span>
+                    </span><br><br>
+
+                    When not working on projects or studying, I am interested in soccer, baking bread, history, and
+                    urban planning.
                 </p>
+            </div>
+
+            <!--PORTFOLIO SECTION-->
+            <div class="portfolio_section" id="portfolio_section">
+                <h1><span class="scndry">&#62;&nbsp</span>Featured Projects</h1><br>
+                <div class="portfolio">
+
+                    <!--ATCUPPS GITHUB IO PROJECT-->
+                    <div class="project">
+                        <div class="innerproject">
+                            <div class="projectHeader">
+                                <div class= "projectName">
+                                    <h3><a href="https://github.com/atcupps/atcupps.github.io" target="_blank">atcupps.github.io</a></h3></div>
+                                <div class= "projectLinks"><a href="https://github.com/atcupps/atcupps.github.io" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <p class="projectDescription">
+                                My personal website (the one you're looking at right now!), built from scratch.
+                                Complete with my projects, contact info, and other career-focused features.
+                            </p>
+                            <div class="projectLanguages">
+                                <div class="projectLang">
+                                    HTML
+                                </div>
+                                <div class="projectLang">
+                                    CSS
+                                </div>
+                                <div class="projectLang">
+                                    JavaScript
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--JSENN-->
+                    <div class="project">
+                        <div class="innerproject">
+                            <div class="projectHeader">
+                                <div class= "projectName">
+                                    <h3><a href="https://github.com/atcupps/JSENN" target="_blank">JSENN</a></h3></div>
+                                <div class= "projectLinks"><a href="https://github.com/atcupps/JSENN" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <p class="projectDescription">
+                                A simulation to examine how environmental factors affect the evolution of neural network behavior.
+                                Includes a custom Java genetic neural network library.
+                            </p>
+                            <div class="projectLanguages">
+                                <div class="projectLang">
+                                    Java
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Schreckliche Seuche-->
+                    <div class="project">
+                        <div class="innerproject">
+                            <div class="projectHeader">
+                                <div class= "projectName">
+                                    <h3><a href="https://github.com/atcupps/SchreklicheSeuche" target="_blank">Schreckliche Seuche</a></h3></div>
+                                <div class= "projectLinks"><a href="https://github.com/atcupps/SchreklicheSeuche" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <p class="projectDescription">
+                                A collaborative project with other students to demonstrate how various factors affect the spread of
+                                a disease through a community.
+                            </p>
+                            <div class="projectLanguages">
+                                <div class="projectLang">
+                                    Java
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!--SEPARATOR BLANK SPACE DIV-->
+                    <div class="separator">&nbsp;</div>
+
+                    <!--SEE MORE BUTTON, LINKS TO GITHUB-->
+                    <a href="https://github.com/atcupps" target="_blank">
+                        <div class="btnLink">
+                            <div>SEE MORE</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--CONTACT SECTION-->
+            <div class="contact_section" id="contact_section">
+                <h1><span class="scndry">&#62;&nbsp</span>Contact Me</h1>
+                <div class="contact_text">
+                    <p>
+                        I am currently looking for opportunities for Summer 2023! If you are interested in having me join
+                        your team, or if you just want to talk about something on my page that may have interested you,
+                        please feel free to contact me via one of the methods below:
+                        <span class="cuppslist">
+                            <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="prmry">&nbsp Personal/Work Email: </span><span class="trtry">at.cupps@gmail.com</span>
+                            <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="prmry">&nbsp School Email: </span><span class="trtry">acupps@terpmail.umd.edu</span>
+                            <br><span class="scndry">&nbsp&nbsp&#62;</span><span class="prmry">&nbsp LinkedIn: </span><span class="trtry"><a href="https://www.linkedin.com/in/andrew-cupps-071879231/" target="_blank">Click here!</a></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!--LAST DIV SO THAT ALL INFO CAN BE DISPLAYED WITH BOTTOMBAR-->
+            <div class="fillerbottom"></div>
+            
+        </div>
+
+        <!--NAVBAR SEPARATION DIV-->
+        <div class="navbar">
+            <div class="logo"><h1>ANDREW CUPPS</h1></div>
+            <div class="links">
+                <a href="https://www.github.com/atcupps/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/andrew-cupps-071879231/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i> </a>
             </div>
         </div>
 
-        <script src = "app.js"></script>
+        <!--BOTTOM GRADIENT BAR SEPARATION DIV-->
+        <div class="bottombar">
+            &nbsp;<br><br><br><br><br>
+        </div>
+
+        <script src="index.js"></script>
     </body>
 </html>
