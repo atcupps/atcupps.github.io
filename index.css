@@ -1,9 +1,9 @@
 :root {
-    --bg: #041a2b;
-    --bgsecondary: #08253a;
-    --txtcolor: white;
-    --txtsecondary: #87ceeb;
-    --txttertiary: #FF785A;
+    --bg: #272932;
+    --bgsecondary: #264458;
+    --txtcolor: #B6C2D9;
+    --txtsecondary: #4D7EA8;
+    --txttertiary: #9E90A2;
 }
 
 html {
@@ -57,7 +57,7 @@ body {
 .mainbody {
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 5%;
     left: 0%;
     display: flex;
     flex-flow: column;
@@ -246,7 +246,7 @@ p {
 .resume_section {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
 .contact_section {
