@@ -343,3 +343,7 @@ p {
 h1 {
     color: var(--txttertiary);
 }
+
+.logo h1 {
+    padding-top: 20px;
+}
