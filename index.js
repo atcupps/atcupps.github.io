@@ -30,4 +30,3 @@ document.querySelector("body").onscroll = function() {
   var yvalue = scrollTop * factor;
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 }
-

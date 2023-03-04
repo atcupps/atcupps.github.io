@@ -104,8 +104,8 @@ body {
 }
 
 .avatar {
-    width: 400px;
-    height: 400px;
+    width: 27.8vw;
+    height: 27.8vw;
     object-fit: cover;
     border-radius: 50%;
 }
