@@ -207,6 +207,7 @@ p {
 .project:hover {
     transform: translateY(-10px);
     transition-duration: 600ms;
+    cursor: pointer;
 }
 
 .innerproject {
@@ -347,4 +348,20 @@ h1 {
 
 .logo h1 {
     padding-top: 20px;
+}
+
+.google-blue {
+    color: #4885ed	
+}
+
+.google-red {
+    color: #db3236
+}
+
+.google-yellow {
+    color: #f4c20d
+}
+
+.google-green {
+    color: #3cba54
 }

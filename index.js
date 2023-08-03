@@ -30,3 +30,18 @@ document.querySelector("body").onscroll = function() {
   var yvalue = scrollTop * factor;
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 }
+
+let website = document.getElementById("website");
+website.addEventListener("click", () => {
+  window.open("https://github.com/atcupps/atcupps.github.io");
+});
+
+let icu4x = document.getElementById("icu4x");
+icu4x.addEventListener("click", () => {
+  window.open("https://github.com/unicode-org/icu4x");
+});
+
+let colossus = document.getElementById("colossus");
+colossus.addEventListener("click", () => {
+  window.open("https://github.com/atcupps/colossus_web");
+});
