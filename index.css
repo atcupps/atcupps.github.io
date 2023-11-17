@@ -1,0 +1,70 @@
+body {
+    background-image: url("stars.gif");
+    color: white;
+    padding: 60px;
+}
+
+.welcometext {
+    color: yellow;
+    font-size: 20px;
+    margin: 0;
+    font-style: italic;
+}
+
+.andrewtext {
+    color: yellow;
+    font-size: 70px;
+    margin: 0;
+}
+
+.thumb {
+    height: 100px;
+}
+
+.blue {
+    color: rgb(0, 110, 255);
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: rgb(39, 213, 0);
+}
+
+a, a:visited {
+    color: yellow;
+}
+
+.placenames {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.flag {
+    width: 12vw;
+}
+
+@media (max-width: 600px) {
+    .andrewsquare {
+        display: none;
+    }
+
+    .thumb {
+        height: 50px;
+    }
+}
+
+@media (max-width: 799px) {
+    body {
+        padding: 20px;
+    }
+
+    .flagstable {
+        font-size: 12px;
+    }
+}
