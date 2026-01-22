@@ -28,6 +28,11 @@ body {
     src: url("Manrope/Manrope-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "Kaiti";
+    src: url("LXGW_WenKai_TC/LXGWWenKaiTC-Light.ttf");
+}
+
 .crimson {
     font-family: "Crimson Text";
 }
