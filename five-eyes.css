@@ -1,0 +1,61 @@
+#five-eyes-belt {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.long-belt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#five-belt {
+    position: relative;
+    left: 0px;
+}
+
+#eyes-belt {
+    position: relative;
+    right: 0px;
+    justify-content: flex-end;
+}
+
+.long-belt-word-black, .long-belt-word-white {
+    width: 20vw;
+    font-family: "Crimson Text Italic";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.long-belt-word-black {
+    color: white;
+    background-color: black;
+}
+
+.long-belt-word-white {
+    color: black;
+    background-color: white;
+}
+
+.eye-white, .eye-black {
+    width: 7.692vw;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+}
+
+.eye-white {
+    background-image: url('images/eye-white.svg');
+    background-size: 100%;
+}
+
+.eye-black {
+    background-image: url('images/eye-black.svg');
+    background-size: 100%;
+}
