@@ -59,3 +59,56 @@
     background-image: url('images/eye-black.svg');
     background-size: 100%;
 }
+
+@media (max-width: 1250px) {
+    .long-belt-word-black, .long-belt-word-white {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .long-belt-word-black, .long-belt-word-white {
+        height: 48px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    .long-belt-word-black, .long-belt-word-white {
+        font-size: 12px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 750px) {
+    .small-removable {
+        display: none;
+    }
+
+    .long-belt-word-black, .long-belt-word-white {
+        width: 50vw;
+        height: 64px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .long-belt-word-black, .long-belt-word-white {
+        height: 48px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .long-belt-word-black, .long-belt-word-white {
+        height: 32px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .long-belt-word-black, .long-belt-word-white {
+        height: 24px;
+        font-size: 12px;
+    }
+}
