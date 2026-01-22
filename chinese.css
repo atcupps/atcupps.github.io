@@ -39,10 +39,10 @@
 }
 
 .hex-divider {
-    height: 101%;
+    height: 110%;
     aspect-ratio: 1;
     background-color: black;
-    transform: scaleX(1);
+    transform: scaleX(1) translateY(-50%);
     transform-origin: center;
     transition: transform 250ms ease;
 }
@@ -56,4 +56,30 @@
     font-size: 32px;
     letter-spacing: 4px;
     line-height: 48px;
+}
+
+@media (max-width: 1250px) {
+    #ch63 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 950px) {
+    #chinese-content {
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    #hexagram {
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    #ch63 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
