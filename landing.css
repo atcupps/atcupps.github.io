@@ -5,6 +5,9 @@
 .landing-bg {
     display: none;
     width: 100%;
+
+    user-select: none;
+    pointer-events: none;
 }
 
 @media (min-width: 961px) {
