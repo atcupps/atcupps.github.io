@@ -1,75 +1,54 @@
 body {
-    background-image: url("images/stars.gif");
+    background-color: black;
     color: white;
-    padding: 60px;
-}
-
-.welcometext {
-    color: yellow;
-    font-size: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    font-style: italic;
-}
-
-.andrewtext {
-    color: yellow;
-    font-size: 70px;
-    margin: 0;
-}
-
-.thumb {
-    height: 100px;
-}
-
-.blue {
-    color: rgb(0, 110, 255);
-}
-
-.red {
-    color: red;
-}
-
-.yellow {
-    color: yellow;
-}
-
-.green {
-    color: rgb(39, 213, 0);
-}
-
-a, a:visited {
-    color: yellow;
+    overflow-y: scroll;
 }
 
 @font-face {
-    font-family: 'Comic Sans MS';
-    src: url("comic-sans-ms/comic.ttf");
+    font-family: "Crimson Text";
+    src: url("Crimson_Text/CrimsonText-Regular.ttf");
 }
 
-.placenames {
-    font-family: "Comic Sans MS";
+@font-face {
+    font-family: "Crimson Text Bold";
+    src: url("Crimson_Text/CrimsonText-Bold.ttf");
 }
 
-.flag {
-    width: 12vw;
+@font-face {
+    font-family: "Crimson Text Italic";
+    src: url("crimson-text/CrimsonText-Italic.ttf");
 }
 
-@media (max-width: 600px) {
-    .andrewsquare {
-        display: none;
-    }
-
-    .thumb {
-        height: 50px;
-    }
+@font-face {
+    font-family: "Manrope";
+    src: url("Manrope/Manrope-VariableFont_wght.ttf");
 }
 
-@media (max-width: 799px) {
-    body {
-        padding: 20px;
-    }
+.crimson {
+    font-family: "Crimson Text";
+}
 
-    .flagstable {
-        font-size: 12px;
-    }
+.crimsonbold {
+    font-family: "Crimson Text Bold";
+}
+
+.crimsonitalic {
+    font-family: "Crimson Text Italic";
+}
+
+.manrope {
+    font-family: "Manrope";
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
 }
