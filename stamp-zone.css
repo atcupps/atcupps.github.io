@@ -93,6 +93,11 @@
     font-size: 24px;
 }
 
+#stamp-dialog-instructions {
+    font-family: "Manrope";
+    font-size: 10px;
+}
+
 #dialog-name-input {
     background-color: white;
     border: none;
