@@ -57,3 +57,10 @@ body {
 .semibold {
     font-weight: 600;
 }
+
+#wall-of-text {
+    font-family: "Manrope";
+    font-size: 8px;
+    text-align: justify;
+    text-align-last: justify;
+}
