@@ -30,6 +30,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 32px;
 }
 
 .stamp-and-label {
@@ -141,6 +142,10 @@
 }
 
 @media (max-width: 480px) {
+    #stamp-container {
+        gap: 16px;
+    }
+
     .stamp {
         width: 48px;
         height: 48px;
