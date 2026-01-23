@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-.singular-stamp {
+.stamp-and-label {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -40,6 +40,11 @@
     font-family: "Manrope";
     font-size: 12px;
     text-align: center;
+}
+
+.stamp {
+    width: 128px;
+    height: 128px;
 }
 
 .stamp-primary-button {
@@ -133,4 +138,11 @@
     font-family: "Manrope";
     font-size: 12px;
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    .stamp {
+        width: 48px;
+        height: 48px;
+    }
 }
