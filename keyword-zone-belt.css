@@ -1,0 +1,87 @@
+#keyword-belts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.keyword-belt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* All word tiles */
+.keyword-belt-word-black-short, .keyword-belt-word-white-long,
+.keyword-belt-word-black-long, .keyword-belt-word-white-short {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Long tiles */
+.keyword-belt-word-black-long, .keyword-belt-word-white-long {
+    font-family: "Crimson Text Italic";
+    width: 20vw;
+}
+
+/* Short tiles */
+.keyword-belt-word-black-short, .keyword-belt-word-white-short {
+    font-family: "Crimson Text";
+    width: 12vw;
+}
+
+/* Black background tiles */
+.keyword-belt-word-black-short, .keyword-belt-word-black-long {
+    background-color: black;
+    color: white;
+}
+
+/* White background tiles */
+.keyword-belt-word-white-short, .keyword-belt-word-white-long {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1440px) {
+    .keyword-belt-word-black-short, .keyword-belt-word-white-long,
+    .keyword-belt-word-black-long, .keyword-belt-word-white-short {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1111px) {
+    .keyword-belt-removable {
+        display: none;
+    }
+
+    /* Long tiles */
+    .keyword-belt-word-black-long, .keyword-belt-word-white-long {
+        font-family: "Crimson Text Italic";
+        width: 40vw;
+    }
+
+    /* Short tiles */
+    .keyword-belt-word-black-short, .keyword-belt-word-white-short {
+        font-family: "Crimson Text";
+        width: 24vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .keyword-belt-word-black-short, .keyword-belt-word-white-long,
+    .keyword-belt-word-black-long, .keyword-belt-word-white-short {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .keyword-belt-word-black-short, .keyword-belt-word-white-long,
+    .keyword-belt-word-black-long, .keyword-belt-word-white-short {
+        font-size: 14px;
+    }
+}
