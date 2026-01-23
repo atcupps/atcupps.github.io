@@ -126,7 +126,7 @@
     width: 288px;
     border: 8px solid white;
     background-color: black;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
