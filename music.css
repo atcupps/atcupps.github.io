@@ -1,0 +1,27 @@
+#music {
+    width: 100vw;
+    aspect-ratio: 1.5;
+    background-image: url('images/music/albums-lg.png');
+    background-size: contain;
+}
+
+@media (max-width: 850px) {
+    #music {
+        background-image: url('images/music/albums-md.png');
+        aspect-ratio: 1;
+    }
+}
+
+@media (max-width: 450px) {
+    #music {
+        background-image: url('images/music/albums-sm.png');
+        aspect-ratio: 5 / 9;
+    }
+}
+
+@media (max-width: 350px) {
+    #music {
+        background-image: url('images/music/albums-xs.png');
+        aspect-ratio: 4 / 11;
+    }
+}

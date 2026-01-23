@@ -1,0 +1,29 @@
+#landing {
+    width: 100%;
+}
+
+.landing-bg {
+    display: none;
+    width: 100%;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (min-width: 961px) {
+    #bg-19 {
+        display: block;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 577px) {
+    #bg-10 {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    #bg-6 {
+        display: block;
+    }
+}

@@ -1,0 +1,112 @@
+#yes-i-am {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 64px;
+}
+
+#yes-i-am-txt {
+    width: 384px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    left: 27.8%;
+    top: 12.5%;
+}
+
+#yes-i-am-fr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: stretch;
+    font-family: "Crimson Text";
+    font-size: 32px;
+    letter-spacing: -0.96px;
+}
+
+#and-im-human {
+    width: 100%;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+#andrews {
+    width: 480px;
+    position: absolute;
+    left: 56.3%;
+    top: 12.5%;
+}
+
+#game-of-life {
+    height: 82%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+@media (max-width: 1250px) {
+    #yes-i-am-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    #yes-i-am-txt {
+        height: fit-content;
+        position: static;
+    }
+
+    #andrews {
+        position: static;
+    }
+
+    #game-of-life {
+        height: 60%;
+    }
+}
+
+@media (max-width: 950px) {
+    #yes-i-am-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+}
+
+@media (max-width: 850px) {
+    #game-of-life {
+        height: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    #yes-i-am {
+        padding-bottom: 0px;
+        min-height: 0px;
+    }
+
+    #yes-i-am-txt {
+        width: 100%;
+    }
+
+    #andrews {
+        width: 300px;
+    }
+
+    #game-of-life {
+        width: 100vw;
+        height: 100vw;
+        position: static;
+    }
+}

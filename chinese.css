@@ -1,0 +1,85 @@
+#chinese {
+    position: static;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chinese-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    flex-shrink: 0;
+    gap: 64px;
+}
+
+#hexagram {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9.09%;
+}
+
+.hex-line {
+    height: 9.09%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hex-divider {
+    height: 110%;
+    aspect-ratio: 1;
+    background-color: black;
+    transform: scaleX(1) translateY(-50%);
+    transform-origin: center;
+    transition: transform 250ms ease;
+}
+
+#ch63 {
+    display: inline-block;
+    height: max-content;
+    flex-shrink: 0;
+    writing-mode: vertical-rl;
+    font-family: "Kaiti";
+    font-size: 32px;
+    letter-spacing: 4px;
+    line-height: 48px;
+}
+
+@media (max-width: 1250px) {
+    #ch63 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 950px) {
+    #chinese-content {
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    #hexagram {
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    #ch63 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

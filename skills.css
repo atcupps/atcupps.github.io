@@ -1,0 +1,82 @@
+#skills {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    padding-bottom: 7%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    color: black;
+}
+
+#skills-header {
+    font-family: "Crimson Text";
+    font-size: 128px;
+    line-height: 96px;
+}
+
+#skills-wall {
+    position: relative;
+    display: flex;
+    font-size: 10px;
+    width: 100%;
+    min-height: 0;
+}
+
+#skills-wall-text {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: "Manrope";
+    text-align: justify;
+}
+
+#some-of-this-is-true {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-meta-word {
+    display: inline-flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Crimson Text Italic";
+    font-size: 32px;
+    background-color: black;
+    color: white;
+}
+
+.offset-right {
+    transform: translateX(100%);
+}
+
+@media (max-width: 750px) {
+    #skills {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        height: 80vh;
+    }
+
+    #skills-header {
+        font-size: 64px;
+        line-height: 48px;
+    }
+
+    #some-of-this-is-true {
+        top: auto;
+        bottom: 0px;
+    }
+
+    .offset-right {
+        transform: translateX(20%);
+    }
+}
