@@ -64,3 +64,25 @@ body {
     text-align: justify;
     text-align-last: justify;
 }
+
+#bottom-ac-banner {
+    width: 100vw;
+    aspect-ratio: 1728 / 279.25;
+    background-image: url('images/ac-banners/ac-banner-19c.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 960px) {
+    #bottom-ac-banner {
+        background-image: url('images/ac-banners/ac-banner-10c.svg');
+        aspect-ratio: 960 / 418.88;
+    }
+}
+
+@media (max-width: 576px) {
+    #bottom-ac-banner {
+        background-image: url('images/ac-banners/ac-banner-6c.svg');
+        aspect-ratio: 576 / 558.5;
+    }
+}
