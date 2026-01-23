@@ -1,0 +1,94 @@
+#maryland {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 128px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#maryland-img {
+    width: 90%;
+    aspect-ratio: 1408 / 704;
+    background-image: url(images/maryland-block.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#collection-content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+#collection-header {
+    font-family: "Crimson Text Italic";
+    font-size: 32px;
+}
+
+#collection-unlisted {
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#collection-list {
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 400;
+
+    & ul {
+        margin: 2px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #collection-header {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #collection-content {
+        left: 22.5%;
+        top: 45%;
+    }
+}
+
+@media (max-width: 850px) {
+    #maryland {
+        padding: 64px;
+    }
+
+    #collection-content {
+        left: 15%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    #maryland {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px;
+    }
+
+    #maryland-img {
+        width: 100%;
+    }
+
+    #collection-content {
+        position: static;
+    }
+
+    #collection-header {
+        font-size: 32px;
+    }
+}
