@@ -8,6 +8,7 @@
     gap: 8px;
     padding-top: 64px;
     padding-bottom: 64px;
+    position: relative;
 }
 
 #stamp-header {
@@ -22,15 +23,6 @@
     text-align: center;
 }
 
-#stamp-button {
-    display: flex;
-    padding: 8px 16px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background-color: white;
-}
-
 #stamp-container {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -38,4 +30,107 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.singular-stamp {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    font-family: "Manrope";
+    font-size: 12px;
+    text-align: center;
+}
+
+.stamp-primary-button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#stamp-dialog {
+    position: absolute;
+    z-index: 10;
+    width: 288px;
+    height: 320px;
+    border: 8px solid white;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 8px;
+}
+
+#exit-dialog {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 2px;
+
+    & button {
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+#stamp-dialog-header {
+    font-family: "Crimson Text";
+    font-size: 24px;
+}
+
+#dialog-name-input {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: "Manrope";
+}
+
+#stamp-editor {
+    width: 160px;
+    height: 160px;
+    margin: 8px;
+}
+
+.stamp-editor-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+}
+
+.stamp-editor-button.filled {
+    background-color: red;
+}
+
+#stamp-success-box {
+    position: absolute;
+    z-index: 10;
+    width: 288px;
+    border: 8px solid white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 8px;
+}
+
+#stamp-success-message {
+    font-family: "Manrope";
+    font-size: 12px;
+    text-align: center;
 }

@@ -603,12 +603,47 @@
                 Create your own stamp to leave on this website.
             </div>
 
-            <button id="stamp-button">
+            <button class="stamp-primary-button" onclick="openDialog()">
                 Stamp!
             </button>
 
             <div id="stamp-container">
-                <img src="images/stamps/andrew-cupps.svg" width="128px" height="128px" />
+                <div class="singular-stamp">
+                    <img src="images/stamps/andrew-cupps.svg" width="128px" height="128px" />
+                    <span>
+                        Andrew <br> 1/22/2026
+                    </span>
+                </div>
+            </div>
+
+            <div id="stamp-dialog">
+                <div id="exit-dialog">
+                    <button onclick="closeDialog()">
+                        X
+                    </button>
+                </div>
+
+                <div id="stamp-dialog-header">
+                    Create a Stamp
+                </div>
+
+                <input type="text" id="dialog-name-input" placeholder="Your name" maxlength="30" />
+
+                <div id="stamp-editor"></div>
+
+                <button class="stamp-primary-button" onclick="submitStamp()">
+                    Submit
+                </button>
+            </div>
+
+            <div id="stamp-success-box">
+                <div id="stamp-success-message">
+                    Thanks for submitting a stamp! I will manually review it before adding it to the website.
+                </div>
+
+                <button class="stamp-primary-button" onclick="closeSuccessBox()">
+                    Ok
+                </button>
             </div>
         </div>
 
@@ -621,4 +656,5 @@
     <script type="module" src="five-eyes.js"></script>
     <script type="module" src="keyword-zone.js"></script>
     <script type="module" src="wall-of-text.js"></script>
+    <script src="stamp.js"></script>
 </html>

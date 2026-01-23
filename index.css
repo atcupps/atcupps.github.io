@@ -86,3 +86,7 @@ body {
         aspect-ratio: 576 / 558.5;
     }
 }
+
+button {
+    cursor: pointer;
+}
