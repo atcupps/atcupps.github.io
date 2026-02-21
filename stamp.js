@@ -1,3 +1,24 @@
+// Import from CDN
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+import { getFirestore, collection, addDoc } 
+    from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
+
+// Your config (from Firebase console)
+const firebaseConfig = {
+    apiKey: "AIzaSyCpiu1L1zUc7C11uQAypmBMAE4SFHwNkiE",
+    authDomain: "stamps-2cac0.firebaseapp.com",
+    projectId: "stamps-2cac0",
+    storageBucket: "stamps-2cac0.firebasestorage.app",
+    messagingSenderId: "262226266268",
+    appId: "1:262226266268:web:13be3618a7ea20f0f5c559"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initialize Firestore
+const db = getFirestore(app);
+
 // add grid of buttons to stamp-editor
 const stamp = document.getElementById('stamp-editor');
 const buttonGrid = document.createElement('div');
@@ -65,33 +86,23 @@ function closeDialog() {
     dialog.style.display = 'none';
 }
 
-function submitStamp() {
+async function submitStamp() {
     const nameInput = document.getElementById('dialog-name-input');
-    const name = nameInput.value;
-    if (name.trim() === '') {
-        name = null;
-    }
-    fetch("https://cawwohkcolitibadbvzj.supabase.co/rest/v1/stamps", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            apikey: 'sb_publishable_1jXARNJzbk8f2o2stHL6qQ_eMFB_Zb7',
-            Authorization: 'Bearer sb_publishable_1jXARNJzbk8f2o2stHL6qQ_eMFB_Zb7',
-            Prefer: 'return=minimal'
-        },
-        body: JSON.stringify({
+    const trimmedName = nameInput.value.trim();
+    const name = trimmedName === '' ? null : trimmedName;
+
+    try {
+        console.log("adding")
+        await addDoc(collection(db, 'stamps'), {
             timestamp: new Date().toISOString(),
-            name: name,
-            stampjson: JSON.stringify(pixels)
-        }),
-    })
-    .then(res => {
-        if (!res.ok) {
-            handleSubmissionError();
-        } else {
-            handleSubmissionSuccess();
-        }
-    });
+            name,
+            stampjson: JSON.stringify(pixels),
+        });
+        handleSubmissionSuccess();
+    } catch (err) {
+        console.error('Failed to upload stamp:', err);
+        handleSubmissionError();
+    }
 }
 
 function handleSubmissionError() {
@@ -99,6 +110,7 @@ function handleSubmissionError() {
 }
 
 function handleSubmissionSuccess() {
+    console.log("success")
     closeDialog();
     const success = document.getElementById('stamp-success-box');
     success.style.display = 'flex';
@@ -108,3 +120,9 @@ function closeSuccessBox() {
     const success = document.getElementById('stamp-success-box');
     success.style.display = 'none';
 }
+
+// Expose handlers for inline onclick attributes in index.html
+window.openDialog = openDialog;
+window.closeDialog = closeDialog;
+window.submitStamp = submitStamp;
+window.closeSuccessBox = closeSuccessBox;
